@@ -1,0 +1,13 @@
+<p id="notice"><%= notice %></p>
+
+<div id="task-form" style="display:none;"></div>
+
+<%= link_to 'New Task', new_task_path, remote: true %>
+
+<h2>Listing Tasks</h2>
+
+<div id="tasks">
+  <ul>
+    <%= render @tasks %>
+  </ul>
+</div>
